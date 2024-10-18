@@ -4,8 +4,7 @@ plugins:
 
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
-  input: GFM # GitHub Flavored Markdown
+  input: GFM  # GitHub Flavored Markdown
 
 title: My GitHub Pages Site
-description: A site with LaTeX rendered using MathJax
+description: A site with LaTeX rendered using KaTeX
