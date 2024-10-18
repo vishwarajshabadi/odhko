@@ -1,3 +1,3 @@
 # test
 
-$$\displaystyle e ^x =\sum ^{+ \infty} _{n = 0} \frac {x ^n} {n!}$$
+$\displaystyle e ^x =\sum ^{+ \infty} _{n = 0} \frac {x ^n} {n!}$
