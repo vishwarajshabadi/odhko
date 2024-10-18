@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Test1
 
 Here is an equation:
