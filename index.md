@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Test
+# Tes
 
 Here is an equation:
 
