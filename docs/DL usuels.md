@@ -1,6 +1,6 @@
 # DL usuels
 
-$u \rightarrow 0$
+Soit $u \rightarrow 0$
 
 $e^u =1+u+\frac{u^2}{2 !}+\frac{u^3}{3 !}+\cdots+\frac{u^n}{n !}+\mathrm{o}\left(u^n\right)$
 
