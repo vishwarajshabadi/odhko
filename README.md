@@ -1,3 +1,3 @@
 # Odhko
 
-[SIte](https://vishwarajshabadi.github.io/odhko/)
+[Site](https://vishwarajshabadi.github.io/odhko/)
