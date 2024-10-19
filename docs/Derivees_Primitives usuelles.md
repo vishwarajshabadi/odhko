@@ -36,7 +36,7 @@ $\sqrt {f(x)} \leftrightarrow \frac {f'(x)}{2\sqrt {f(x)}}$
 
 $e^{f(x)} \leftrightarrow f'(x)e^{f(x)}$
 
-$ln \left|f(x)\right| \leftrightarrow \frac {f'(x)}{f(x)}$
+$ln \vert f(x)\vert  \leftrightarrow \frac {f'(x)}{f(x)}$
 
 $f(ax + b) \leftrightarrow af' (ax + b)$
 
@@ -48,13 +48,13 @@ $\frac{(x-c)^{n+1}}{n+1} \leftrightarrow (x-c)^n$
 
 $\frac{e^{cx}}{c} \leftrightarrow e^{cx}$
 
-$\ln \left| x - c \right| \leftrightarrow \frac{1}{x - c}$
+$\ln \vert  x - c \vert  \leftrightarrow \frac{1}{x - c}$
 
 $x\ln (x) -x \leftrightarrow \ln x$
 
 $-\cos (x) \leftrightarrow \sin(x)$
 
-$-\ln \left|\cos(x)\right| \leftrightarrow \tan(x)$
+$-\ln \vert \cos(x)\vert  \leftrightarrow \tan(x)$
 
 $\frac{f(ax+b)}{a} \leftrightarrow f'(ax + b)$
 
