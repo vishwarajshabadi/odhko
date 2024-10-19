@@ -11,9 +11,9 @@ kramdown:
 
 remote_theme: Bilal2453/cayman-docs
 
-navigation:
-  name_over_title: false
-  # toc_parameter:
+# navigation:
+#   name_over_title: false
+#   # toc_parameter:
 
-show_downloads: false
-google_analytics: G-TLQD7X9Z6C
+# show_downloads: false
+# google_analytics: G-TLQD7X9Z6C
