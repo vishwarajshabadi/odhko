@@ -1,7 +1,5 @@
-[DL usuels](DL%20usuels.md)
+[DL usuels](DL%20usuels)
 
-[Formules de Trigo](Formules%20de%20Trigo.md)
+[Formules de Trigo](Formules%20de%20Trigo)
 
-[Derivees_Primitives usuelles](Derivees_Primitives%20usuelles.md)
-
-$e^x$
+[Derivees_Primitives usuelles](Derivees_Primitives%20usuelles)
