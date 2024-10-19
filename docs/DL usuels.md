@@ -2,7 +2,6 @@
 
 $u \rightarrow 0$
 
-
 $e^u =1+u+\frac{u^2}{2 !}+\frac{u^3}{3 !}+\cdots+\frac{u^n}{n !}+\mathrm{o}\left(u^n\right)$
 
 $\cos (u)=1-\frac{u^2}{2 !}+\frac{u^4}{4 !}+\cdots+\frac{(-1)^n u^{2 n}}{(2 n) !}+\mathrm{o}\left(u^{2 n}\right)$
