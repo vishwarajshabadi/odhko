@@ -9,4 +9,11 @@ kramdown:
   math_engine: mathjax
   input: GFM # GitHub Flavored Markdown
 
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: Bilal2453/cayman-docs
+
+navigation:
+  name_over_title: false
+  # toc_parameter:
+
+show_downloads: false
+google_analytics: G-TLQD7X9Z6C
