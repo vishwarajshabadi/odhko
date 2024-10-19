@@ -1,11 +1,12 @@
-remote_theme: pages-themes/cayman@v0.2.0
+title: Odhko
+description: Fiches de révision de Vishwaraj Shabadi
+
 plugins:
   - jekyll-remote-theme
 
 markdown: kramdown
 kramdown:
   math_engine: mathjax
-  input: GFM  # GitHub Flavored Markdown
+  input: GFM # GitHub Flavored Markdown
 
-title: My GitHub Pages Site
-description: A site with LaTeX rendered using MathJax
+remote_theme: pages-themes/cayman@v0.2.0
