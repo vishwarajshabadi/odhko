@@ -13,7 +13,7 @@ $\operatorname{ch}(u)=1+\frac{u^2}{2 !}+\frac{u^4}{4 !}+\cdots+\frac{u^{2 n}}{(2
 
 $\operatorname{sh}(u)=u+\frac{u^3}{3 !}+\frac{u^5}{5 !}+\cdots+\frac{u^{2 n+1}}{(2 n+1) !}+\mathrm{o}\left(u^{2 n+1}\right)$
 
-$(1+u)^\alpha =1+\alpha u+\frac{\alpha(\alpha-1)}{2 !} u^2+\frac{\alpha(\alpha-1)(\alpha-2)}{3 !} u^3+\cdots+\frac{\alpha(\alpha-1) \ldots(\alpha-(n-1{n !} u^n+\mathrm{o}\left(u^n\right)$, où $\alpha$ est un réel fixe.
+$(1+u)^{\alpha} = 1 + \alpha u + \frac{\alpha(\alpha-1)}{2!} u^2 + \frac{\alpha(\alpha-1)(\alpha-2)}{3!} u^3 + \cdots + \frac{\alpha(\alpha-1) \cdots (\alpha-(n-1))}{n!} u^n + \mathrm{o}(u^n)$, où $\alpha$ est un réel fixe.
 
 $\frac{1}{1+u}=1-u+u^2-u^3+\cdots+(-1)^n u^n+\mathrm{o}\left(u^n\right)$
 
