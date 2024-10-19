@@ -1,1 +1,1 @@
-[[docs/MPI|MPI]]
+[MPI](docs/MPI.md)
