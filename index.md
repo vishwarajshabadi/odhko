@@ -1,4 +1,5 @@
 # Odhko
-## [MPI](docs/MPI.md)
 
-## [MP2I](docs/MP2I.md)
+## [MPI](docs/MPI)
+
+## [MP2I](docs/MP2I)
