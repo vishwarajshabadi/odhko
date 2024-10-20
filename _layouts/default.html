@@ -48,6 +48,7 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ site.title }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description }}</h2>
+       <h2 class="project-dir">/ <a href="{{ site.github.url | default: '../' | relative_url }}">{{ site.title | default: 'Main Page' }}</a> / <a href="{{ page.url | absolute_url | default: './' }}">{% if n.name_over_title %}{{ page_title }}{% else %}{{ page.title | default: page_title }}{% endif %}</a></h2>
     </header>
 
     <main id="content" class="main-content" role="main">
