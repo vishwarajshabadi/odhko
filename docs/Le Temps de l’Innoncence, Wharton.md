@@ -2,4 +2,4 @@
 
 ## [Citations Wharton par thème](Citations%20Wharton%20par%20thème)
 
-## [Citations Wharton ](Citations%20Wharton%20)
+## [Citations Wharton ](Citations%20Wharton)
