@@ -51,9 +51,9 @@
         <a href="{{ site.github.url | default: '../' | relative_url }}">{{ site.title | default: 'Main Page' }}</a>
         /
         {% assign segments = page.url | split: '/' %}
-        {% assign link = '' %}
         {% for segment in segments %}
-          {% if segment != "" and segment != "docs" %}
+          {% if segment != "" %}
+            {% assign link = '' %}
             {% for i in (0..forloop.index0) %}
               {% assign link = link | append: segments[i] | append: '/' %}
             {% endfor %}
@@ -71,6 +71,7 @@
           {% endif %}
         {% endfor %}
       </h2>
+
 
     </header>
 
