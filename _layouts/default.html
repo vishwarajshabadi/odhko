@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
 
-<head>
-
-  <noscript><style> #sidebar { max-height: initial !important; } </style></noscript>
-  {% if site.google_analytics %}
+    {% if site.google_analytics %}
     <!-- Google tag (gtag.js) -->   
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
@@ -17,94 +15,73 @@
     <script type="text/javascript" defer data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/06028a9dd1a3e.js" data-cmp-host="b.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="16"></script>
 
     {% endif %}
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  {% seo %}
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style"
-    type="text/css" crossorigin>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#15628e">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  <link rel="icon" href="/assets/nerd.png" type="image/png">
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="icon" href="/assets/nerd.png" type="image/png">
 
-  <!-- Include MathJax -->
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
-  </script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']]
-      },
-      options: {
-        renderActions: {
-          addMenu: [0, '', '']  // Disable the MathJax menu
+    <!-- Include MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+    </script>
+    <script type="text/javascript">
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        options: {
+          renderActions: {
+            addMenu: [0, '', '']  // Disable the MathJax menu
+          }
         }
-      }
-    };
-  </script> 
+      };
+    </script>
 </head>
-
-<body>
-  <header class="page-header" role="banner">
-    <h1 class="project-name">{{ site.title }}</h1>
-    {% capture page_title %}{{ page.name | split: "." | first }}{% endcapture %}
-    <h2 class="project-dir">
-      <a href="{{ site.github.url | default: '../' | relative_url }}">{{ site.title | default: 'Main Page' }}</a>
-      /
-      {% assign segments = page.url | split: '/' %}
-      {% for segment in segments %}
-        {% if segment != "" %}
-          {% assign link = '' %}
-          {% for i in (0..forloop.index0) %}
-            {% assign link = link | append: segments[i] | append: '/' %}
-          {% endfor %}
-          <a href="{{ link | relative_url }}">
-            {% if forloop.last %}
-              {% if page.title %}
-                {{ page.title }}
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ site.title }}</h1>
+      <h2 class="project-dir">
+        <a href="{{ site.github.url | default: '../' | relative_url }}">{{ site.title | default: 'Main Page' }}</a>
+        /
+        {% assign segments = page.url | split: '/' %}
+        {% assign link = '' %}
+        {% for segment in segments %}
+          {% if segment != "" and segment != "docs" %}
+            {% for i in (0..forloop.index0) %}
+              {% assign link = link | append: segments[i] | append: '/' %}
+            {% endfor %}
+            <a href="{{ link | relative_url }}">
+              {% if forloop.last %}
+                {% if page.title %}
+                  {{ page.title }}
+                {% else %}
+                  {{ segment | capitalize }}
+                {% endif %}
               {% else %}
                 {{ segment | capitalize }}
               {% endif %}
-            {% else %}
-              {{ segment | capitalize }}
-            {% endif %}
-          </a> /
-        {% endif %}
-      {% endfor %}
-    </h2>
+            </a> /
+          {% endif %}
+        {% endfor %}
+      </h2>
 
-  </header>
+    </header>
 
-  <aside id="sidebar">
-    <nav class="navigator" id="nav">
-      {% assign n=site.navigation %}
-      {% include toc.html html=content sanitize=n.sanitize strip_par=n.strip_par class=n.class id=n.id h_min=n.h_min h_max=n.h_max ordered=n.ordered item_class=n.item_class submenu_class=n.submenu_class base_url=n.base_url anchor_class=n.anchor_class skip_no_ids=n.skip_no_ids %}
-    </nav>
-  </aside>
-
-  <div class="main-wrapper">
     <main id="content" class="main-content" role="main">
-      <div id="content-wrapper">
-        {% include anchor_headings.html html=content anchorBody="#" beforeHeading=true anchorClass="heading-anchor" anchorTitle="%heading%" %}
-      </div>
-  
+      {{ content }}
+
       <footer class="site-footer">
-        {% if site.github.is_project_page %}
-        <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a>
-          is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/Bilal2453/cayman-docs/">Cayman Docs</a> theme.</span>
+        <small>Rafrâichir la page en cliquant sur le bouton si le Latex déconne.</small>
+        <p></p>
+        <span class="site-footer-owner"><a href="https://vishwarajshabadi.github.io/odhko/">Odhko</a> par <a href="{{ site.github.owner_url }}">Vishwaraj Shabadi</a>.</span>
       </footer>
     </main>
-  </div>
-
-  <script src="{{ '/assets/js/js_enabled.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-  <script src="{{ '/assets/js/anchor_spy.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-  <script src="{{ '/assets/js/navigator.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-</body>
-
+  </body>
 </html>
