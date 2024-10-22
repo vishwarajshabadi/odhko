@@ -27,23 +27,26 @@
     <link rel="icon" href="/assets/nerd.png" type="image/png">
 
     <!-- Include MathJax -->
-    <script type="text/javascript">
-      window.MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
-          displayMath: [['$$', '$$'], ['\\[', '\\]']],
-          processEscapes: true
-        },
-        options: {
-          renderActions: {
-            addMenu: [0, '', '']  // Disable the MathJax menu
-          }
-        }
-      };
-    </script>
-    <script type="text/javascript" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
+    <!-- Include MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      packages: {'[+]': ['base']}  // Only load the base package
+    },
+    options: {
+      renderActions: {
+        addMenu: [0, '', '']  // Disable the MathJax menu
+      }
+    }
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 
 </head>
   <body>
@@ -62,12 +65,6 @@
         <small>Rafrâichir la page en cliquant sur le bouton si le Latex déconne.</small>
         <p></p>
         <span class="site-footer-owner"><a href="https://github.com/vishwarajshabadi/odhko">Odhko</a> par <a href="{{ site.github.owner_url }}">Vishwaraj Shabadi</a>.</span>
-        <script type="text/javascript">
-          document.addEventListener("DOMContentLoaded", function() {
-            MathJax.typeset();
-          });
-        </script>
-
       </footer>
     </main>
   </body>
