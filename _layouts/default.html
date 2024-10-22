@@ -28,25 +28,22 @@
 
     <!-- Include MathJax -->
     <!-- Include MathJax -->
-<script type="text/javascript">
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      processEscapes: true,
-      packages: {'[+]': ['base']}  // Only load the base package
-    },
-    options: {
-      renderActions: {
-        addMenu: [0, '', '']  // Disable the MathJax menu
-      }
-    }
-  };
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    packages: ['base', 'ams', 'noerrors', 'noundefined']
+  },
+  loader: {load: ['[tex]/ams']}
+};
 </script>
-<script src="mathjax_config.js" async></script>
+ 
+</script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
+
 
 
 
