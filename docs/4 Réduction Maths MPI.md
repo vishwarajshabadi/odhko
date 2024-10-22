@@ -41,8 +41,8 @@ Soit $x \neq 0$, notons $\Delta = Vect(x)$.
 
 ### Prop
 
-Soit $E$ un $\mathbb{K}$-ev de dimension finie, $u \in \mathcal{L}(E)$, $\lambda_1$,…$ \lambda*n$ valeurs propres distinctes de $u$, alors :
-$$\displaystyle \sum*{i1 \leq i \leq n} E*{\lambda_i}(u) = \bigoplus*{i = 1} ^n E\_{\lambda_i}(u)$$
+Soit $E$ un $\mathbb{K}$-ev de dimension finie, $u \in \mathcal{L}(E)$, $\lambda_1,…\lambda_n$ valeurs propres distinctes de $u$, alors :
+$$\displaystyle \sum_{1 \leq i \leq n} E_{\lambda_i}(u) = \bigoplus_{i = 1} ^n E_{\lambda_i}(u)$$
 
 ### Démonstration
 
@@ -99,7 +99,7 @@ $1 \leq dim(E_{\lambda}(u)) \leq m_\lambda$.
 ### Démonstration
 
 - $\lambda \in Sp(u) \Rightarrow \dim(E_{\lambda}(u)) \geq 1$.
-- $F \subset E$ $u$-stable, soit $\tilde u$ induit, $\chi_{\tilde u} | \chi_u$ ie $m_{\lambda} \geq dim(E_{\lambda}(u))$ car $\chi_u = \prod_{\lambda \in Sp(u)} (X - \lambda)^{m_{\lambda}}$.
+- $F \subset E$ $u$-stable, soit $\tilde u$ induit, $\chi_{\tilde u} \vert \chi_u$ ie $m_{\lambda} \geq dim(E_{\lambda}(u))$ car $\chi_u = \prod_{\lambda \in Sp(u)} (X - \lambda)^{m_{\lambda}}$.
 
 ## Lien entre les valeurs propres et la trace et le déterminant pour une matrice trigonalisable
 
@@ -126,7 +126,7 @@ Montrer que $(a, u(a), …, u^{k-1}(a))$ est libre en composant par $u ^{k-1}, �
 
 ### Prop
 
-Soit $F \subset E$ $u$-stable, alors $\chi_{u_{|F}} | \chi_u$.
+Soit $F \subset E$ $u$-stable, alors $\chi_{u_{\vert F}} \vert \chi_u$.
 
 ## Théorème fondamental de diagonalisation à l'aide du polynôme caractéristique
 
@@ -199,11 +199,11 @@ $$Ker((P_1 \times…\times P_n)(u)) = \bigoplus_{i=1} ^n Ker(P_i(u))$$
 
 ### Prop
 
-Soit $F \subset E$ $u$-stable, alors $u_{|F}$ diagonalisable.
+Soit $F \subset E$ $u$-stable, alors $u_{\vert F}$ diagonalisable.
 
 ### Démonstration
 
-$\begin{cases} u \text{ diagonalisable } \Leftrightarrow \chi_u \text{ scindé simple } \\ F \text{ u-stable } \Rightarrow \chi_{u_{|F}} | \chi_u \end{cases} \Rightarrow \Pi_{\tilde u} \text{ scindé simple } \Rightarrow u_{|F} \text{ diagonalisable }$
+$\begin{cases} u \text{ diagonalisable } \Leftrightarrow \chi_u \text{ scindé simple } \\ F \text{ u-stable } \Rightarrow \chi_{u_{\vert F}} \vert \chi_u \end{cases} \Rightarrow \Pi_{\tilde u} \text{ scindé simple } \Rightarrow u_{\vert F} \text{ diagonalisable }$
 
 ## Caractérisation des endos trigonalisables par le polynôme minimal ou un polynôme annulateur
 
@@ -252,7 +252,7 @@ Lemme de décomposition des noyaux $\displaystyle \Rightarrow Ker(\Pi_u(u)) = \b
 
 ### Prop
 
-Soit $F \subset E$ $u$-stable, alors $\Pi_{u_{|F}} \vert \Pi_u$.
+Soit $F \subset E$ $u$-stable, alors $\Pi_{u_{\vert F}} \vert \Pi_u$.
 
 ### Démonstration
 
@@ -318,9 +318,9 @@ Soit $A, B \in \mathcal{M}_n(\mathbb{R})$ telles que $A$ et $B$ sont semblables 
 
 # Tableau Synthése
 
-|               | \( \chi_u \)                                                                                                                                                           | \( \pi_u \)                                                                                           | \( P \ \text{tq.} \ P(u) = 0 \)                                   |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| \( Sp(u) \)   | \( Sp(u) = Rac(\chi_u) \)                                                                                                                                              | \( Sp(u) = Rac(\pi_u) \)                                                                              | \( Sp(u) \subseteq Rac(P) \)                                      |
-| \( d^\circ \) | \( d^\circ(\chi_u) = n \)                                                                                                                                              | \( d^\circ(\pi_u) \leq n \)                                                                           | \( d^\circ(P) \geq d^\circ(\pi_u) \)                              |
-| **Diag.**     | \( u \ \text{diag.} \iff \left\{ \begin{array}{l} 1. \ \chi*u \ \text{scindé} \\ 2. \ \forall \lambda \in Sp(u), \ \dim(E*\lambda) = m\_\lambda \end{array} \right. \) | \( u \ \text{diag.} \iff \left\{ \begin{array}{l} \pi_u \ \text{scindé simple} \end{array} \right. \) | \( u \ \text{diag.} \iff \text{il existe un p.a scindé simple} \) |
-| **Trig.**     | \( u \ \text{trig.} \iff \chi_u \ \text{scindé} \)                                                                                                                     | \( u \ \text{trig.} \iff \pi_u \ \text{scindé} \)                                                     | \( u \ \text{trig.} \iff \text{il existe un p.a scindé} \)        |
+|           | $\chi_u$                                                                                                                                                           | $\pi_u$                                                                                           | $P \ \text{tq.} \ P(u) = 0$                                   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| $Sp(u)$   | $Sp(u) = Rac(\chi_u)$                                                                                                                                              | $Sp(u) = Rac(\pi_u)$                                                                              | $Sp(u) \subseteq Rac(P)$                                      |
+| $d^\circ$ | $d^\circ(\chi_u) = n$                                                                                                                                              | $d^\circ(\pi_u) \leq n$                                                                           | $d^\circ(P) \geq d^\circ(\pi_u)$                              |
+| **Diag.** | $u \ \text{diag.} \iff \left\{ \begin{array}{l} 1. \ \chi*u \ \text{scindé} \\ 2. \ \forall \lambda \in Sp(u), \ \dim(E*\lambda) = m\_\lambda \end{array} \right.$ | $u \ \text{diag.} \iff \left\{ \begin{array}{l} \pi_u \ \text{scindé simple} \end{array} \right.$ | $u \ \text{diag.} \iff \text{il existe un p.a scindé simple}$ |
+| **Trig.** | $u \ \text{trig.} \iff \chi_u \ \text{scindé}$                                                                                                                     | $u \ \text{trig.} \iff \pi_u \ \text{scindé}$                                                     | $u \ \text{trig.} \iff \text{il existe un p.a scindé}$        |
