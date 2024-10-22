@@ -166,7 +166,7 @@ Il existe un unique polynôme annulateur de u, noté $\Pi _u$, de degré minimal
 
 #### Existence
 
-$D_u = \set{degP\vert P \in \mathbb{K}[X], P(u) = 0}$ est non vide car $\chi_u \in D_u$.
+$D_u = \{degP\vert P \in \mathbb{K}[X], P(u) = 0\}$ est non vide car $\chi_u \in D_u$.
 Il existe un polynôme de degré minimal, notons le $P_0$.
 $\Pi_0 = \frac {P_0}{cd(P_0)}$ convient.
 
@@ -296,7 +296,7 @@ Soit $A \in GL_n(\mathbb{K})$, alors $\exists P \in \mathbb{K}[X]$ tel que $A^{-
 
 ### Prop
 
-$\exists (A_n)_n \in M_n(\mathbb{C})^\N$ telle que $A_n$ diagonalisable et $A_n \xrightarrow[n \to +\infty]{} A$.
+$\exists (A_n)_n \in M_n(\mathbb{C})^\mathbb{N}$ telle que $A_n$ diagonalisable et $A_n \xrightarrow[n \to +\infty]{} A$.
 
 ## Décomposition de Dunford
 
