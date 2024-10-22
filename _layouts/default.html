@@ -27,14 +27,12 @@
     <link rel="icon" href="/assets/nerd.png" type="image/png">
 
     <!-- Include MathJax -->
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
-    </script>
     <script type="text/javascript">
       window.MathJax = {
         tex: {
           inlineMath: [['$', '$'], ['\\(', '\\)']],
-          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          packages: {'[+]': ['braket']}  // Add the 'braket' package if needed
         },
         options: {
           renderActions: {
@@ -43,6 +41,10 @@
         }
       };
     </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+    </script>
+
 </head>
   <body>
     <header class="page-header" role="banner">
@@ -60,6 +62,12 @@
         <small>Rafrâichir la page en cliquant sur le bouton si le Latex déconne.</small>
         <p></p>
         <span class="site-footer-owner"><a href="https://github.com/vishwarajshabadi/odhko">Odhko</a> par <a href="{{ site.github.owner_url }}">Vishwaraj Shabadi</a>.</span>
+        <script type="text/javascript">
+          document.addEventListener("DOMContentLoaded", function() {
+            MathJax.typeset();
+          });
+        </script>
+
       </footer>
     </main>
   </body>
