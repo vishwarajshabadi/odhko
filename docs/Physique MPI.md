@@ -10,11 +10,9 @@
 
 ### [1 Frottements de Glissement Physique MPI](1%20Frottements%20de%20Glissement%20Physique%20MPI)
 
-### [2 Changement de Réferentiel Physique MPI](2%20Changement%20de%20Réferentiel%20Physique%20MPI)
+### [2 Changement de Réferentiel Physique MPI](2%20Changement%20de%20Réferentiel%20Physique%20MPI.md)
 
 ### [3 Réferentiels non Galiléens Physique MPI](3%20Réferentiels%20non%20Galiléens%20Physique%20MPI)
-
-### [4 Mécanique Terrestre Physique MPI](4%20Mécanique%20Terrestre%20Physique%20MPI)
 
 ### [5 Champ Gravitationnel Physique MPI](5%20Champ%20Gravitationnel%20Physique%20MPI)
 
