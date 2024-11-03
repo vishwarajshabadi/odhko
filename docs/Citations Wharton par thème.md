@@ -86,7 +86,7 @@
 
 - "Combien d'autres, avant lui, (Newland Archer) avaient rêvé son rêve, qui graduellement s'étaient enfoncés dans les eaux dormantes de la vie fortunée !" (XIV)
 
-- "Pour l'enfant (Dallas, sans doute) l'épisode (l'amour inaccompli de Newland pour Ellen) n'était que l'exemple pathétique d'une vie gâchée" (XXXIV)
+- "Pour l'enfant (Dallas) l'épisode (l'amour inaccompli de Newland pour Ellen) n'était que l'exemple pathétique d'une vie gâchée" (XXXIV)
 
 ## Destin pesant sur les individus ou possible liberté ?
 

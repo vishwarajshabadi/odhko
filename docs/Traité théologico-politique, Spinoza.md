@@ -34,7 +34,7 @@ Thèmes :
 - bon sens collectif
 - démocratie
 
-" Le fondement et (la) fin de la démocratie (…) n'est autre (…) que de soustraire les hommes à la domination absurde de l'appétit et (…) de les maintenir, autant qu'il est possible, dan les limites de la raison, pour qu'ils vivent dans la concorde et dans la paix " (XVI, p. 77)
+" Le fondement et (la) fin de la démocratie (…) n'est autre (…) que de soustraire les hommes à la domination absurde de l'appétit et (…) de les maintenir, autant qu'il est possible, dans les limites de la raison, pour qu'ils vivent dans la concorde et dans la paix " (XVI, p. 77)
 Thèmes :
 - démocratie
 - raison
